@@ -25,6 +25,15 @@ class ViewController: UIViewController {
         present(nextController, animated: true, completion: nil)
     }
     
-    
+    @IBAction func showAlertDialog(sender: UIButton) {
+        let nextController = UIAlertController()
+        
+        nextController.title = "Alert Dialog"
+        nextController.message = "This is a test of Alert Dialog"
+        
+        present(nextController, animated: true, completion: nil)
+    }
+
+
 }
 
