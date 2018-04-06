@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,9 +31,12 @@ class ViewController: UIViewController {
         nextController.title = "Alert Dialog"
         nextController.message = "This is a test of Alert Dialog"
         
+        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default) { action in self.dismiss(animated: true, completion: nil) }
+        
+        nextController.addAction(okAction)
         present(nextController, animated: true, completion: nil)
     }
-
-
+    
+    
 }
 
