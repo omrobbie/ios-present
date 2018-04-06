@@ -19,7 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func showCameraRoll(sender: UIButton) {
+        let nextController = UIImagePickerController()
+        present(nextController, animated: true, completion: nil)
+    }
+    
+    
 }
 
