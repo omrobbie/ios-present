@@ -46,7 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Roll The Dice!"/>
                                 <connections>
-                                    <segue destination="OQA-dz-UIu" kind="show" id="25I-pH-aIP"/>
+                                    <action selector="rollTheDice" destination="BYZ-38-t0r" eventType="touchUpInside" id="UY4-vb-poJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,30 +58,50 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Dice View Controller-->
         <scene sceneID="Ql0-yb-UVy">
             <objects>
-                <viewController id="OQA-dz-UIu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiceViewController" id="OQA-dz-UIu" customClass="DiceViewController" customModule="Present" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TG3-O0-NRZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="xXn-VM-mfk">
+                                <rect key="frame" x="123" y="90" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d6" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-dN-Wd3">
+                                <rect key="frame" x="123" y="234" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ean-gC-z4J">
-                                <rect key="frame" x="153" y="543" width="69" height="70"/>
+                                <rect key="frame" x="153" y="528" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <state key="normal" title="OK">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.11167912233806437" green="0.19887447965408703" blue="0.59581010545473645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="dismissAction" destination="OQA-dz-UIu" eventType="touchUpInside" id="zR8-qU-MvZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24843764609237212" green="0.5" blue="0.27469360917967367" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Gek-23-jg4"/>
                     </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="Ean-gC-z4J" id="XA7-Um-xhH"/>
+                        <outlet property="firstDice" destination="xXn-VM-mfk" id="U1N-CZ-uGY"/>
+                        <outlet property="secondDice" destination="Pnz-dN-Wd3" id="YDK-MO-uoY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6d-8N-mcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="134"/>
+            <point key="canvasLocation" x="895" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="d1" width="100" height="100"/>
+        <image name="d6" width="100" height="100"/>
+    </resources>
 </document>

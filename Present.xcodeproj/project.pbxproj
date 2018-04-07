@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC8A66DE20796E0300E6ADF9 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8A66DD20796E0300E6ADF9 /* DiceViewController.swift */; };
 		FC90E82B207752AC00EFEC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90E82A207752AC00EFEC7F /* AppDelegate.swift */; };
 		FC90E82D207752AC00EFEC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90E82C207752AC00EFEC7F /* ViewController.swift */; };
 		FC90E830207752AC00EFEC7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC90E82E207752AC00EFEC7F /* Main.storyboard */; };
 		FC90E832207752AF00EFEC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC90E831207752AF00EFEC7F /* Assets.xcassets */; };
-		FC90E835207752AF00EFEC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC90E833207752AF00EFEC7F /* LaunchScreen.storyboard */; };
 		FC90E840207752AF00EFEC7F /* PresentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90E83F207752AF00EFEC7F /* PresentTests.swift */; };
 		FC90E84B207752AF00EFEC7F /* PresentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90E84A207752AF00EFEC7F /* PresentUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC8A66DD20796E0300E6ADF9 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		FC90E827207752AC00EFEC7F /* Present.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Present.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC90E82A207752AC00EFEC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC90E82C207752AC00EFEC7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC90E82F207752AC00EFEC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC90E831207752AF00EFEC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC90E834207752AF00EFEC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC90E836207752AF00EFEC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC90E83B207752AF00EFEC7F /* PresentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC90E83F207752AF00EFEC7F /* PresentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTests.swift; sourceTree = "<group>"; };
@@ -99,9 +99,9 @@
 			children = (
 				FC90E82A207752AC00EFEC7F /* AppDelegate.swift */,
 				FC90E82C207752AC00EFEC7F /* ViewController.swift */,
+				FC8A66DD20796E0300E6ADF9 /* DiceViewController.swift */,
 				FC90E82E207752AC00EFEC7F /* Main.storyboard */,
 				FC90E831207752AF00EFEC7F /* Assets.xcassets */,
-				FC90E833207752AF00EFEC7F /* LaunchScreen.storyboard */,
 				FC90E836207752AF00EFEC7F /* Info.plist */,
 			);
 			path = Present;
@@ -229,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC90E835207752AF00EFEC7F /* LaunchScreen.storyboard in Resources */,
 				FC90E832207752AF00EFEC7F /* Assets.xcassets in Resources */,
 				FC90E830207752AC00EFEC7F /* Main.storyboard in Resources */,
 			);
@@ -256,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8A66DE20796E0300E6ADF9 /* DiceViewController.swift in Sources */,
 				FC90E82D207752AC00EFEC7F /* ViewController.swift in Sources */,
 				FC90E82B207752AC00EFEC7F /* AppDelegate.swift in Sources */,
 			);
@@ -299,14 +299,6 @@
 				FC90E82F207752AC00EFEC7F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC90E833207752AF00EFEC7F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC90E834207752AF00EFEC7F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

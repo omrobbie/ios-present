@@ -37,5 +37,21 @@ class ViewController: UIViewController {
         present(nextController, animated: true, completion: nil)
     }
     
+    // Roll the dice with random number
+    func randomDiceValue() -> Int {
+        let randomValue = 1 + arc4random() % 6
+        return Int(randomValue)
+    }
+    
+    @IBAction func rollTheDice() {
+        var controller: DiceViewController
+        
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "DiceViewController") as! DiceViewController
+        
+        controller.firstValue = self.randomDiceValue()
+        controller.secondValue = self.randomDiceValue()
+        
+        present(controller, animated: true, completion: nil)
+    }
     
 }
